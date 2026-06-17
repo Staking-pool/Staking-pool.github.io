@@ -1,0 +1,102 @@
+{
+ "keyword": "staking pool",
+ "h1": "Staking Pool",
+ "brand": "Lido",
+ "niche": "stake",
+ "verb": "Stake",
+ "title": "Staking Pool - Open App",
+ "meta_description": "staking pool route to Lido's official ETH staking app; connect a wallet, stake for stETH, and review protocol risks before signing.",
+ "palette": {
+  "mode": "light",
+  "bg": "#F2F8FF",
+  "accent": "#00A3FF",
+  "ink": "#273852"
+ },
+ "hero_h2": "Stake ETH and keep a liquid position through stETH",
+ "hero_lead": "staking pool helps ETH holders reach Lido's official app to stake ETH, receive stETH, and understand liquid staking risks before signing a transaction.",
+ "badge": "ETH Staking",
+ "widget": {
+  "from": "ETH",
+  "from_net": "Ethereum",
+  "to": "stETH",
+  "to_net": "Ethereum",
+  "action": "Open Lido App"
+ },
+ "trust": [
+  "Ethereum mainnet",
+  "stETH token",
+  "Open-source protocol"
+ ],
+ "what_is": "Lido is an Ethereum liquid staking protocol that batches user deposits with validators and mints stETH as a transferable staking token. Review the <a href='https://docs.lido.fi/'>Lido docs</a> before connecting a wallet.",
+ "how": [
+  {
+   "t": "Open the app",
+   "d": "Go to stake.lido.fi and verify the domain before connecting any wallet."
+  },
+  {
+   "t": "Connect wallet",
+   "d": "Use a self-custody Ethereum wallet and confirm the selected network is Ethereum mainnet."
+  },
+  {
+   "t": "Stake ETH",
+   "d": "Enter the ETH amount, review the transaction details, and submit only after checking risks and gas costs."
+  },
+  {
+   "t": "Manage position",
+   "d": "Track stETH in your wallet, use the Lido app for rewards and withdrawals, and keep recovery phrases offline."
+  }
+ ],
+ "points": [
+  {
+   "h": "Liquid access",
+   "p": "ETH submitted through Lido receives stETH, a transferable token designed to reflect a staked position while rewards and penalties depend on validator performance."
+  },
+  {
+   "h": "Transparent contracts",
+   "p": "Core protocol addresses can be checked against the <a href='https://etherscan.io/address/0xae7ab96520DE3A18E5e111B5EaAb095312D7fE84'>stETH contract on Etherscan</a> before interacting."
+  },
+  {
+   "h": "Risk-aware routing",
+   "p": "Rewards are variable, not guaranteed, and users should consider smart contract, validator, slashing, liquidity, and governance risks."
+  }
+ ],
+ "eeat": [
+  {
+   "text": "Lido docs",
+   "url": "https://docs.lido.fi/"
+  },
+  {
+   "text": "Ethereum staking",
+   "url": "https://ethereum.org/staking/"
+  },
+  {
+   "text": "stETH contract on Etherscan",
+   "url": "https://etherscan.io/address/0xae7ab96520DE3A18E5e111B5EaAb095312D7fE84"
+  }
+ ],
+ "faq": [
+  {
+   "q": "What is a staking pool for ETH?",
+   "a": "It is a pooled way to participate in Ethereum validation without running a solo validator yourself; pooled and liquid options are described in the <a href='https://ethereum.org/staking/'>Ethereum staking</a> guide.",
+   "open": true
+  },
+  {
+   "q": "Is this staking pool the official Lido app?",
+   "a": "No. This page routes users to the official Lido staking interface at stake.lido.fi; always verify the domain before connecting a wallet.",
+   "open": false
+  },
+  {
+   "q": "What token do I receive from the staking pool?",
+   "a": "When staking ETH through Lido, users receive stETH on Ethereum, which is designed to represent staked ETH plus protocol-linked rewards and penalties.",
+   "open": false
+  },
+  {
+   "q": "Can I withdraw from the staking pool?",
+   "a": "Lido provides a withdrawals flow in the official app, but timing and final amounts depend on Ethereum validator exits, protocol mechanics, and network conditions.",
+   "open": false
+  }
+ ],
+ "official_url": "https://stake.lido.fi/",
+ "official_domain": "stake.lido.fi",
+ "footer_note": "This is not the official app; verify stake.lido.fi before connecting a wallet. Educational content only, not financial advice."
+}

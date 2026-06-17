@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://staking-pool.github.io/sitemap.xml
