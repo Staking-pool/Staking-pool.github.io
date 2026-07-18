@@ -1,0 +1,58 @@
+# Staking Pool
+> An independent, non-custodial informational dashboard for understanding pooled proof-of-stake routes without surrendering wallet keys or operating validator infrastructure.
+
+## What is Staking Pool
+A staking pool combines stake from multiple participants and assigns it to one or more proof-of-stake validators. It lowers operational and minimum-balance barriers while distributing rewards and penalties according to each participant’s share. Unlike solo staking, users do not operate their own validator; unlike custodial exchange staking, a non-custodial design uses wallet-controlled delegation or on-chain contracts. A staking pool secures a network, whereas a liquidity pool primarily supports token trading or lending.
+
+## How it works
+1. The user selects a network and verifies the pool operator, contracts, fees, validator policy, custody model, and exit rules.
+2. The user delegates native tokens or deposits them into a pool contract by signing a wallet transaction.
+3. The pool activates or delegates validator stake; protocol rewards, downtime penalties, and slashing affect the pooled position.
+4. On-chain shares or a receipt token track each participant’s claim while operator or protocol fees are deducted.
+5. Exiting requires protocol undelegation and any applicable queue, or redemption or sale of a liquid staking token.
+
+## Key facts
+- This dashboard has no native token, contract address, validator, or chain ID and does not custody funds.
+- Pool models include native delegation, protocol-native nomination pools, smart-contract pools, liquid staking, and custodial services.
+- Ethereum Mainnet uses EIP-155 chain ID `1` and ETH; pooled staking is external to its base protocol.
+- Ethereum validator activation starts from a 32 ETH base balance; pooled receipt tokens commonly use ERC-20 but no universal staking-token standard exists.
+- Solana stake pools combine SOL stake accounts and can issue SPL pool tokens representing proportional ownership.
+- Cardano delegates ADA to pool IDs without transferring the wallet’s spending authority.
+- Polkadot nomination pools are protocol-native, non-custodial pools using DOT.
+- Costs can include network fees, validator commission, protocol fees, and liquid-token trading spreads.
+- Activation, rewards, and withdrawal timing depend on network epochs, validator queues, and pool rules; transaction confirmation does not mean stake is immediately active.
+- Principal risks are validator failure or slashing, smart-contract defects, compromised authorities, governance changes, centralization, and receipt-token liquidity or price divergence.
+
+## Common questions
+- **Is a staking pool safe?** Safety depends on validator performance, contract security, administrative powers, decentralization, and exit mechanics; an audit reduces but does not eliminate risk.
+- **Who controls my crypto?** Native delegation often preserves wallet withdrawal control, while contract deposits are governed by contract rules; custodial services control the deposited assets.
+- **What fees apply?** Review validator commission, protocol fees, network transaction costs, redemption fees, and any market spread before signing.
+- **How long does staking or unstaking take?** It can range from an on-chain confirmation to multiple epochs or a variable validator queue.
+- **Which assets are supported?** Validator staking normally uses native proof-of-stake assets such as ETH, SOL, ADA, DOT, or ATOM; supported routes must be checked individually.
+- **How do I start?** Choose the correct network, verify official addresses and authorities, retain gas funds, review exit terms, and sign only the intended delegation or deposit.
+- **Can rewards be guaranteed?** No; rewards vary with protocol issuance, validator performance, participation, fees, penalties, and pool accounting.
+
+## App
+- Dashboard: https://staking-pool.github.io/
+- App: https://staking-pool.github.io/dashboard/
+
+## Official resources
+Ethereum Pooled Staking Guide: https://ethereum.org/staking/pools/
+Ethereum Validator Withdrawals: https://launchpad.ethereum.org/withdrawals
+Ethereum Validator FAQ: https://launchpad.ethereum.org/en/faq
+Ethereum EIP-155 Chain ID Standard: https://eips.ethereum.org/EIPS/eip-155
+Ethereum ERC-20 Token Standard: https://eips.ethereum.org/EIPS/eip-20
+Solana Stake Programming: https://solana.com/docs/references/staking/stake-program
+Solana Stake Accounts: https://solana.com/docs/references/staking/stake-accounts
+Solana Stake Pool Source and Audits: https://github.com/solana-program/stake-pool
+Cardano Stake Pools: https://docs.cardano.org/about-cardano/learn/stake-pools
+Polkadot Nomination Pools: https://wiki.polkadot.network/learn/learn-nomination-pools/
+Cosmos SDK Staking Module: https://docs.cosmos.network/sdk/v0.50/build/modules/staking/README
+
+## Data & references
+Proof of Stake Overview: https://en.wikipedia.org/wiki/Proof_of_stake
+Staking Pools on Blockchains Research: https://arxiv.org/abs/2203.05838
+DefiLlama Liquid Staking Data: https://defillama.com/protocols/liquid-staking
+CoinGecko Liquid Staking Tokens: https://www.coingecko.com/en/categories/liquid-staking-tokens
+Ethereum Consensus Explorer: https://beaconcha.in/
+Cardano Stake Pool Explorer: https://cardanoscan.io/pools
