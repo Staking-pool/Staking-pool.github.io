@@ -1,0 +1,19 @@
+{
+  "name": "Staking Pool",
+  "short_name": "Staking Pool",
+  "description": "Staking Pool explains pooled proof-of-stake: how delegation works, how variable rewards are earned, custody models, lock-ups, and how to verify a pool before committing.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "lang": "en",
+  "background_color": "#f5f6f8",
+  "theme_color": "#f5f6f8",
+  "icons": [
+    {
+      "src": "favicon.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
